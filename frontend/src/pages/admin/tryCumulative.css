@@ -1,0 +1,183 @@
+.addUsertt {
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .custom-table th, .custom-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .custom-table th {
+    width: 100px;
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .custom-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .custom-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .custom-table .actionButtons button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-table .actionButtons button:hover {
+    background-color: #45a049;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .m-2 {
+    margin: 20px 0;
+  }
+  
+
+  /* .addUser .custom-table th:nth-child(2),
+.addUser .custom-table td:nth-child(2) {
+  position: sticky;
+  left: 97px;
+  background-color: #f9f9f9;
+  z-index: 1;
+  width: 20%;
+}
+
+
+.addUser .custom-table th:nth-child(1),
+.addUser .custom-table td:nth-child(1) {
+  position: sticky;
+  left: 0;
+  background-color: #f9f9f9;
+  z-index: 2; 
+  width: 20%;
+}
+
+
+
+.addUser .custom-table th:nth-child(3),
+.addUser .custom-table td:nth-child(3) {
+  position: sticky;
+  left: 0;
+  background-color: #f9f9f9;
+  z-index: 2; 
+  width: 20%;
+}.addUser .custom-table th:nth-child(4),
+.addUser .custom-table td:nth-child(4) {
+  position: sticky;
+  left: 0;
+  background-color: #f9f9f9;
+  z-index: 2; 
+  width: 20%;
+} */
+
+
+
+.scrollable-tablett {
+  overflow-x: auto;
+  position: relative; /* Ensure relative positioning for z-index */
+  border: 1px solid #ddd; /* Add border to the scrollable container */
+  margin-top: 10px;
+  }
+  .addUsertt table {
+    border-collapse: separate; /* Use separate border-collapse to prevent border collapse */
+    border-spacing: 0; /* Set border spacing to 0 to remove space between cells */
+    width: 100%; /* Ensure table takes full width */
+    }
+
+
+
+
+
+
+
+.addUsertt .custom-table th:nth-child(1),
+.addUsertt .custom-table td:nth-child(1) {
+position: sticky;
+left: 0;
+background-color: #f9f9f9;
+z-index: 2; /* Ensure ULB Name is above ULB Code */
+}
+/* Fix ULB Code column on the left */
+.addUsertt .custom-table th:nth-child(2),
+.addUsertt .custom-table td:nth-child(2) {
+position: sticky;
+left: 85px; 
+background-color: #f9f9f9;
+z-index: 1;
+}
+/* Fix 3 */
+.addUsertt .custom-table th:nth-child(3),
+.addUsertt .custom-table td:nth-child(3) {
+position: sticky;
+left: 170px; /* Adjust left position to align with ULB Name */
+background-color: #f9f9f9;
+z-index: 3;
+}
+/* Fix 4 */
+.addUsertt .custom-table th:nth-child(4),
+.addUsertt .custom-table td:nth-child(4) {
+position: sticky;
+left: 375px; /* Adjust left position to align with ULB Name */
+background-color: #f9f9f9;
+z-index: 4;
+
+}
+
+
+.scrollable-containertt {
+  overflow-x: auto;
+  overflow-y: scroll;
+  width: 100%;
+  height: 550px;
+  position: relative;
+  }
+  .scrollable-contenttt {
+  width: max-content;
+  }
+  .scrollable-containertt::-webkit-scrollbar {
+  width: 10px;
+  }
+  .scrollable-containertt::-webkit-scrollbar-thumb {
+  background-color: #888;
+  }
+  /* Style for the scrollbar at the top */
+  .scrollable-containertt.scrollable-containertt::-webkit-scrollbar {
+  width: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  }
+  .scrollable-containertt.scrollable-containertt::-webkit-scrollbar-thumb {
+  background-color: #888;
+  }

@@ -1,0 +1,139 @@
+.addUser{
+  width: auto;
+  background-color: white;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  border-radius: 5px;
+  margin:  auto;
+  padding: 10px;
+}
+
+.addUserForm{
+  margin-top: 20px;
+}
+
+.addUserForm .inputGroup{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.addUserForm .inputGroup label{
+  margin-bottom: 5px;
+}
+
+.addUserForm .inputGroup input{
+  margin-bottom: 20px;
+  padding: 10px;
+  outline: none;
+}
+
+.addUserForm .inputGroup button{
+  border: 0;
+  outline: none;
+  background-color: purple;
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  margin-top: 20px;
+}
+
+.addUser h3{
+  margin-top: 10px;
+}
+
+
+
+.scrollable-table {
+overflow-x: auto;
+position: relative; /* Ensure relative positioning for z-index */
+border: 1px solid #ddd; /* Add border to the scrollable container */
+margin-top: 10px;
+}
+.addUserForm table {
+border-collapse: separate; /* Use separate border-collapse to prevent border collapse */
+border-spacing: 0; /* Set border spacing to 0 to remove space between cells */
+width: 100%; /* Ensure table takes full width */
+}
+.addUserForm th,
+.addUserForm td {
+padding: 10px;
+border: 1px solid #ddd;
+}
+.addUserForm th {
+background-color: #f2f2f2;
+}
+/* Fix ULB Name column on the left */
+.addUserForm th:nth-child(1),
+.addUserForm td:nth-child(1) {
+position: sticky;
+left: 0;
+background-color: #f9f9f9;
+z-index: 2; /* Ensure ULB Name is above ULB Code */
+}
+/* Fix ULB Code column on the left */
+.addUserForm th:nth-child(2),
+.addUserForm td:nth-child(2) {
+position: sticky;
+left: 85px; /* Adjust left position to align with ULB Name */
+background-color: #f9f9f9;
+z-index: 1;
+}
+/* Fix 3 */
+.addUserForm th:nth-child(3),
+.addUserForm td:nth-child(3) {
+position: sticky;
+left: 170px; /* Adjust left position to align with ULB Name */
+background-color: #f9f9f9;
+z-index: 3;
+}
+/* Fix 4 */
+.addUserForm th:nth-child(4),
+.addUserForm td:nth-child(4) {
+position: sticky;
+left: 375px; /* Adjust left position to align with ULB Name */
+background-color: #f9f9f9;
+z-index: 4;
+}
+
+
+
+.scrollable-container {
+overflow-x: auto;
+overflow-y: scroll;
+width: 100%;
+height: 550px;
+position: relative;
+}
+.scrollable-content {
+width: max-content;
+}
+.scrollable-container::-webkit-scrollbar {
+width: 10px;
+}
+.scrollable-container::-webkit-scrollbar-thumb {
+background-color: #888;
+}
+/* Style for the scrollbar at the top */
+.scrollable-container.scrollable-container::-webkit-scrollbar {
+width: 10px;
+position: absolute;
+top: 0;
+left: 0;
+}
+.scrollable-container.scrollable-container::-webkit-scrollbar-thumb {
+background-color: #888;
+}
+
+
+
+.filledInput{
+background-color: lightgreen;
+}
+
+.remainingInput{
+background-color: lightyellow;
+}

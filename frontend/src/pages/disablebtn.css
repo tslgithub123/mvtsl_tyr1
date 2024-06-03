@@ -1,0 +1,7 @@
+/* Add this to your CSS */
+.btn.disabled {
+    opacity: 0.6; /* Adjust opacity to your preference */
+    pointer-events: none; /* Disables clicking */
+    filter: blur(1px); /* Adds blur effect */
+    /* You can also add other styles to indicate the button is disabled */
+}
