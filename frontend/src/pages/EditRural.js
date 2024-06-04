@@ -955,7 +955,7 @@ const Add = () => {
                 toast.error("Authentication token missing", { position: "top-right" });
                 return;
             }
-            const response = await axios.post(`http://localhost:8090/api/v1/ruraledi/${ulbCode}`, formData, {
+            const response = await axios.post(`http://89.116.20.162:8080/api/v1/ruraledi/${ulbCode}`, formData, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

@@ -321,9 +321,9 @@ const OneUsers = () => {
 
             let endpoint;
             if (isAdmin) {
-                endpoint = 'http://localhost:8090/api/v1/cities/rural/category/<1.5k';
+                endpoint = 'http://89.116.20.162:8080/api/v1/cities/rural/category/<1.5k';
             } else {
-                endpoint = `http://localhost:8090/api/v1/city/${userId}`;
+                endpoint = `http://89.116.20.162:8080/api/v1/city/${userId}`;
             }
 
             const response = await axios.get(endpoint, {
@@ -343,7 +343,7 @@ const OneUsers = () => {
             }
 
             if (isAdmin) {
-                const submittedResponse = await axios.get(`http://localhost:8090/api/v1/city-sub`, {
+                const submittedResponse = await axios.get(`http://89.116.20.162:8080/api/v1/city-sub`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
